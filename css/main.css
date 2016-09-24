@@ -360,36 +360,8 @@ ul.contact-info {           /*  the ul tag  */
 
 .contact-info li {
     display: inline-block;
-    background-size: 25px 25px;
-    background-repeat: no-repeat;
-    background-position: 0 .5em;
     padding-left: 3em;
-    padding-right: 3em;
-    line-height: 3em;
-}
-
-.contact-info li.phone {
-    background-image: url("../images/iphone.svg");
-}
-
-.contact-info li.email {
-    background-image: url("../images/email.svg");
-}
-
-.contact-info li.linkedin {
-    background-image: url("../images/linkedin.svg");
-}
-
-.contact-info li.twitter {
-    background-image: url("../images/twitter.svg");
-}
-
-.contact-info li.github {
-    background-image: url("../images/github.svg");
-}
-
-.contact-info li.codepen {
-    background-image: url("../images/codepen.svg");
+    padding-right: 1em;
 }
 
 .bullet a:link,
