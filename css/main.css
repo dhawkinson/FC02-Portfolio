@@ -1,0 +1,456 @@
+/* Global Layout Set-up */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #E8EAF6;
+    font-size: 12px;
+    line-height: 1.25;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+/*******************************************
+    Set Font Styles
+********************************************/
+
+
+.head-row {
+    font-family:'Russo One', sans-serif;
+}
+
+.tagline {
+    font-family:'Baloo Da', cursive;
+    font-style: italic;
+    color: #F44336;
+    text-align: center;
+}
+
+.page,
+.foot {
+    font-family:'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+.tablet p,
+.tablet li {
+    font-size: 1em;
+    color:  #232E3E;
+}
+
+
+.tablet small {
+    color:  #232E3E;
+}
+
+.foot p {
+    font-size: 1em;
+    color: #E8EAF6;
+}
+
+/*******************************************
+    End of Set Font Styles
+********************************************/
+
+/*  positioning for scrollspy   */
+
+#about,
+#portfolio,
+#contact {
+    position: relative;
+}
+
+/**********************************************
+    headContainer styling
+**********************************************/
+
+.head-container {
+    background-color: #232E3E;
+    margin: 0;
+    width: 100%;
+}
+
+.name {
+    padding-top: 1.5em;
+}
+.navbar-left h2,
+.navbar-left small {
+    color: #E8EAF6;
+    padding-left: 2em;
+    margin: 0;
+}
+
+.navbar-right {
+    margin-right: 5em;
+}
+
+.navbar-nav li {
+    display: inline-block;
+    list-style: none;
+    padding-left: .5em;
+    background-color: #232E3E;
+}
+
+.navbar-nav li h3 {
+    color: #F44336;
+    text-decoration: none;
+}
+
+.navbar-nav li h3:hover {
+    color: #FF9800;
+}
+
+
+/**********************************************
+    set width of image & tagline
+**********************************************/
+
+.jumbotron {
+    width: 100%;
+    position: relative;
+    background-color: #E8EAF6;
+    padding-bottom: 0;
+    margin-bottom: 1em;
+}
+
+/***********************************************
+    content styling - all pages
+***********************************************/
+
+.content {
+    position: relative;
+}
+
+/***********************************************
+    surface styling - all pages
+***********************************************/
+
+.tablet {
+    padding: 1em 2.5em;
+    margin: 0;
+    text-align: left;
+    background-color:#FFFFFF;
+    border-bottom: 4px solid #CCCCCC;
+    border-radius: 1em;
+    transition: all .5s;
+}
+
+.tablet.tablet-bottom {
+    margin-top: 2.5em;
+}
+
+.tablet:hover {
+    border-color: #232E3E;
+}
+
+.tablet a:link,
+.tablet a:focus,
+.tablet a:visited {
+    text-decoration: none;     /*  remove underline */
+}
+
+.about-me {
+    padding-top: 2em;
+}
+
+.headshot:hover {
+    transform: scale(1.2) rotate(5deg);
+    transition: all .5s;
+}
+
+.skills li {
+    display: inline-block;
+    list-style: none;
+    background-color: #FF6E40;
+    color: #E8EAF6;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 6px;
+}
+
+.skills li:nth-child(odd) {
+    background-color: #232E3E;
+}
+
+.quote-row {
+    margin-top: 1em;
+}
+
+.quote-col h4 {
+    color: #F44336;
+    text-align: center;
+}
+
+/**********************************************
+   folio page styling
+***********************************************/
+
+.projects img {
+    display: inline-block;
+}
+
+
+.experience img {
+    display: inline-block;
+}
+
+.thumbnails.screens figure img {
+    max-width: 360px;
+    height: auto;
+    padding: 1em;
+    border: solid 1px black;
+    margin: 1em;
+}
+
+.thumbnails.docs figure img {
+    max-width: 135px;
+    height: auto;
+    padding: .5em;
+    border: solid 1px black;
+    margin: .5em;
+}
+
+/*********************************************
+    slide-in captions (screen shots & docs)
+**********************************************/
+figure {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+    margin: .5%;
+}
+
+figcaption {
+    position: absolute;
+    background: rgba(0,0,0,0.75);
+    color: #FFFFFF;
+    padding: 5px 20px;
+    opacity: 0;
+    bottom: 0;
+    left: -30%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:    all 0.5s ease;
+    -o-transition:      all 0.5s ease;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+    left: 0;
+    bottom: 0;
+}
+
+/**********************************************
+    modal styling
+**********************************************/
+
+.projImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.projImg:hover {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 50; /* Sit on top */
+    padding-top: 110px; /* Location of the box */
+    left: 20%;
+    top: 0;
+    width: 60%; /* width */
+    height: 90%; /* height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(207,216,220); /* Fallback color */
+    background-color: rgba(207,216,220,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: 1%;
+    padding:1%;
+}
+
+#modal-header {
+    text-align: center;
+}
+
+#modal-img img {
+    max-width: 720px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.indent {
+    text-indent: 3%;
+}
+
+/* The Close Button */
+
+.close {
+    position: absolute;
+    top: 130px;
+    right: 35px;
+    color: #F44336;
+    opacity: 1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.close:hover,
+.close:focus {
+    color: #1B5E20;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/**********************************************
+    end of modal styling
+**********************************************/
+
+.docShots {
+    background-size: 200px 135px;
+    background: no-repeat;
+    padding-bottom: 3em;
+    opacity: .5;
+    transition: all .5s;
+}
+
+/**********************************************
+    contact page
+***********************************************/
+
+ul.contact-info {           /*  the ul tag  */
+    list-style-type: none;
+    padding: 0;
+    margin-left: 3em;
+    opacity: .5;
+    transition: all .5s;
+}
+
+.contact-info li {
+    display: inline-block;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: 0 .5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    line-height: 3em;
+}
+
+.contact-info li.phone {
+    background-image: url("../images/iphone.svg");
+}
+
+.contact-info li.email {
+    background-image: url("../images/email.svg");
+}
+
+.contact-info li.linkedin {
+    background-image: url("../images/linkedin.svg");
+}
+
+.contact-info li.twitter {
+    background-image: url("../images/twitter.svg");
+}
+
+.contact-info li.github {
+    background-image: url("../images/github.svg");
+}
+
+.contact-info li.codepen {
+    background-image: url("../images/codepen.svg");
+}
+
+.bullet a:link,
+.bullet a:focus,
+.bullet a:visited {
+    text-decoration: none;     /*  remove underline */
+    color: #000000;
+}
+
+.bullet li:hover {
+    opacity: 1;
+}
+
+p.attribution {
+    text-decoration: none;     /*  remove underline */
+    color: #000000;
+    text-align: center;
+    font-size: 75%;
+}
+
+/**********************************************
+    footer styling
+***********************************************/
+
+.foot {
+    position: relative;
+    width: 100%;
+    background: #232E3E;
+    text-align: center;
+    font-size: 75%;
+    padding: 1em;
+}
+
+/*
+
+
+	 CSS-Tricks Example
+	 by Chris Coyier
+	 http://css-tricks.com
+
+
+* { margin: 0; padding: 0; }
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+
+article, aside, figure, footer, header, hgroup,
+menu, nav, section { display: block; }
+
+h1 { font-weight: 300; font-size: 40px; margin: 0 0 10px 0; }
+
+#page-wrap { width: 960px; margin: 100px auto; position: relative;  }
+
+#learninz {
+    position: absolute;
+    top: 0; right: 0; width: 320px;
+}
+
+body style, pre { margin: 0 0 20px 0; display: block; background: #333; padding: 16px; color: white; white-space: pre; }
+style, code { font: 10px Monaco, MonoSpace; }
+figure img { width: 300px; display: block; }
+figure:nth-child(4) { clear: both; }
+*/

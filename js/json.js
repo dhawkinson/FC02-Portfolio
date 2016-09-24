@@ -1,0 +1,74 @@
+var modalParams = [
+    {
+        projId: "fivesolasdesign",
+        projType: "Commercial Web Site",
+        projImg: "images/fivesolasdesign_mdl.jpg",
+        projURL: "http://www.fivesolasdesign.com",
+        projCP: "",
+        projGH: "https://github.com/dhawkinson/fivesolasdesign",
+        projRole: "Designer, Coder, Tester",
+        projDesc: "<h2>fivesolasdesign</h2><h4>A Commercial Website built for a client, Five Solas Design (my dba as a freelancer)</h4><h4>Industry: Commercial Website Development</h4><h4>Purpose: Branding, Marketing and Sales</h4><p>Site Structure: Three pages; About, Portfolio, Contact</p><ul><li>The About Page:</li><ul><li>Introduces me with a brief bio and my skills in web development.</li><li>It contains a navigation bar.</li></ul><li>The Portfolio Page:</li><ul><li>The navigation bar is carried through to this page which introduces you to some of my most notable work on the web via a gallery grid of project thumbnails.</li><li>Hover on the thumbnail and the name appears.</li><li>Click on any of the thumbnails to see the detail of the project you are interested in pursuing further.</li><li>The thumbnails represent websites I have built or worked on or projects I have completed. Each of the projects demonstrates one or more skills in design, styling or behavior responses for a site.</li><li>The thumbnail clicked on will open in a new window and will discuss the unique attributes of the site or project.</li><li>You will also find links to print either my resume (updated to be the most current) or a list of testimonials regarding me from some of my previous colleagues and clients.</li></ul><li>The Contact Page:</li><ul><li>Carries through the navigation bar and provides you with a variety of means to contact me directly or research more about me.</li><li>From time to time I will also post links to sites that I find are informative and helpful. This feature will be dynamic so seeing it once will not be seeing forever.</li></ul></ul>"
+    },
+    {
+        projId: "ergobizdesign",
+        projType: "Commercial Web Site",
+        projImg: "images/ergobizdesign_mdl.jpg",
+        projURL: "http://www.ergobizdesign.com",
+        projCP: "",
+        projGH: "https://github.com/dhawkinson/ergobizdesign",
+        projRole: "Designer, Coder, Tester",
+        projDesc: "<h2>ergobizdesign</h2><h3>A Commercial Website Built for a client,Ergo Business Solutions</h3><h3>Industry: Used Office Furniture (Liquidations, Wholesale and Retail Sales, Space Planning)</h3><h3>Location: Greater Seattle</h3><h3>Purpose: Branding, Marketing and Sales</h3><h3>Site Structure: Four pages; Home, Inventories, Conference/Contemporary, Contact</h3><ul><li>HOME</li><ul><li>Declaration of the saving on quality furniture the client can expect to get</li><li>Offer of a different alternative if used doesn't fit the client needs</li><li>Assurance that the client can buy with confidence because of our skill, experience and reputation</li><li>Sticking with it until the customer is satisfied</li><li>The importnce of our reputation</li></ul><li>INVENTORIES</li><ul><li>Message about the rapid nature of turnover</li><li>Suggestion to call if you don't see what you want</li><li>Picture and text content. Easily updateable</li></ul><li>CONFERENCE/CONTEMPORARY</li><ul><li>Inventories of quality new furniture are more readily available – please call for pricing because it varies widely</li><li>If you don’t see what you’re looking for, please contact us. We have other options for your consideration, and often items are built as ordered</li><li>Picture and text content.</li></ul><li>CONTACT US</li><ul><li>Provide the means for the various ways of contacting us</li></ul></ul><p><strong>NOTE: This site is a work in progress. The client recently had to sever relationship with the previous design entity. The client chose to come to me to completely rebuild the site.</strong></p>"
+    },
+    {
+        projId: "fsjsProject01",
+        projType: "Treehouse.com Techdegree project",
+        projImg: "images/fsjsProject01_mdl.jpg",
+        projURL: "",
+        projCP: "http://codepen.io/dhawkinson/pen/vGMNeo",
+        projGH: "https://github.com/dhawkinson/FSJSproject01",
+        projRole: "Designer, Coder, Tester",
+        projDesc: "<h2>FSJSproject01 <small>(Project Instructions)</small></h2><h3>Full Stack Java ScriptProject 01 - Treehouse TechDegree Program</h3><p>To complete this project, follow the instructions below. If you get stuck, ask a question in the community.</p> <p>8 steps</p><p>Create an array of JavaScript objects to hold the data for your quotes.</p><p>Each quote object should have the following properties:<p> <ul><li>A quote property which contains a string: the text of the quote to display on the page</li><li>A source property which contains a string identifying the creator of the quote. For example: \'Mark Twain\' or \'Traditional Irish proverb\'</li><li>An optional citation property which contains a string identifying the publication the quote appears in. For example, \'Famous Anonymous Jokes\'. If there is no known publication, then do not include this property on the object.</li><li>An optional year property which contains a number identifying the date of the quote. For example, 1997. If there is no known date, then do not include this property on the object.</li></ul> <p>Create a function named getRandomQuote which:</p> <ul><li>selects a random quote object from the quotes array</li><li>returns the randomly selected quote object</li></ul><p>Create a function named printQuote which follows these rules:</p><ul><li>printQuote calls the getRandomQuote function and stores the returned quote object in a variable</li><li>printQuote constructs a string using the different properties of the quote object using the following HTML template: <p class=\'quote\'> [quote here] </p> <p class=\'source\'> [source here] <span class=\'citation\'> [citation here] </span> <span class=\'year\'> [year here] </span> </p></li><li>printQuote doesn't add a <span class=\'citation\'> for a missing citation or a <span class=\'year\'> if the year property is missing</li><li>printQuote displays the final HTML string to the page. You can use the following JS snippet to accomplish that: document.getElementById('quote-box').innerHTML</li><p><strong>Make sure you add code comments to document how your functions work</strong><p><p><strong>Use JSHint (see the link in the Project Resources section) to analyze your JavaScript and identify any errors or code-style problems.</strong></p><p><strong>Make sure your program is free of syntax errors. You can monitor any errors by looking at the Developer Tools console in your browser.</strong></p><p><strong>Before you submit your project for review, make sure you can check off all of the items on the Student Project Submission Checklist. The checklist is designed to help you make sure you’ve met the grading requirements and that your project is complete and ready to be submitted!</strong></p> <p>NOTE: A good practice is to check your project for cross browser compatibility. Making sure that it looks and functions correctly in multiple (at least three) browsers is an important part of being a top-notch developer. If you want, leave a comment to the project reviewer about which browser(s) the project was checked to ensure they are seeing things as you have designed them.</p> <p>Some browser options:</p><ul><li>Google Chrome</li><li>Mozilla Firefox</li><li>Internet Explorer/Edge</li><li>Safari</li></ul><p></p><p><strong>Extra Credit</strong></p><p>To get an \'exceeds\' rating, you can expand on the project in the following ways:</p><p>4 steps</p><ul><li>Add more properties to the quote object. For example, a tags property could include a list of \'tags\' like -- \'humor\', \'business\', \'politics\' -- to categorize each quote.</li><li>Randomly change the background color of the page, when the quote changes</li><li>Don't display a random quote more than once until ALL quotes from the array have been displayed.</li><li>Refresh the quote after a set amount of time. For example, every 30 seconds, make a new quote appear. (You can use the setInterval() or setTimeout() method to do this -- see the links in the Project Resources listing.)</li></ul><p></p><p><strong>NOTE: Grade Received was EXCEEDS EXPECTATIONS</strong></p>"
+    },
+    {
+        projId: "fsjsProject02",
+        projType: "Treehouse.com Techdegree project",
+        projImg: "images/fsjsProject02_mdl.jpg",
+        projURL: "",
+        projCP: "http://codepen.io/dhawkinson/pen/QKEOpr",
+        projGH: "https://github.com/dhawkinson/FSJSProject02",
+        projRole: "Designer, Coder, Tester",
+        projDesc: "<h2>FSJSProject02 <small>(Project Instructions)</small></h2><h3>Full Stack Java Script Project 02 - Treehouse TechDegree</h3><h3>9 Steps to complete:</h3><ol><li>Use the filter-example.html file to guide your decision making. Using progressive enhancement, your work should affect the index.html file.</li><li>Since only 10 students should be shown at a time, your programming needs to calculate the number of pages needed and add the appropriate number of links to the bottom of the page.</li><li>Hide all but the first 10 students when the page loads.</li><li>When a user clicks on \'2\' in the pagination, students 11 through 20 are shown. When a user clicks \'3\', students 21 through 30 are shown. And so on. When \'6\' is clicked 51 through 55 should be shown.</li><li>Using progressive enhancement, add the student search markup as presented in the filters-example.html file to the index.html file.</li><li>Add an event listener to the search button. When the user clicks on the button it should use the text in the search input to filter the results.</li><li>Users should be able to search by name or e-mail address. And partial matches, like just a first name, should be displayed in the results.</li><li>Search results should also be paginated. For example, if the search returns more than 10 results, those results should be paginated too.</li><li>Check your project for cross browser compatibility. Making sure that it looks and functions correctly in multiple (at least three) browsers is an important part of being a top-notch developer. If you want, leave a comment to the project reviewer about which browser(s) the project was checked to ensure they are seeing things as you have designed them.</li></ol><p>To get an \'exceeds\' rating, you can expand on the project in the following ways:</p><ul><li>Include simple animations when transitioning between pages.</li><li>As the user types in the search box, dynamically filter the student listings. In other words, after each letter is typed into the search box, display any listings that match.</li><li>If no matches are found, include a message in the HTML to tell the user there are no matches.</li></ul><p></p><p><strong>NOTE: Grade Received was EXCEEDS EXPECTATIONS</strong></p>"
+    },
+    {
+        projId: "fccProject01",
+        projType: "Free Code Camp Full Stack Developer Project",
+        projImg: "images/fccProject01_mdl.jpg",
+        projURL: "",
+        projCP: "http://codepen.io/dhawkinson/pen/LRpWvX",
+        projGH: "https://github.com/dhawkinson/fccProject01",
+        projRole: "Designer, Coder, Tester",
+        projDesc: "<h2>Build a Tribute Page</h2> <h3>Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/NNvBQW/.</h3><h3>Project Rules</h3><ol><li>Don't look at the example project's code. Figure it out for yourself.</li><li>Fulfill the below user stories. Use whichever libraries you need. Give it your own personal style.</li><li>User Story: I can view a tribute page with an image and text.</li><li>User Story: I can click on a link that will take me to an external website with further information on the topic.</li><li>Remember to use Read-Search-Ask if you get stuck.</li><li>When you are finished, click the I've completed this challenge button and include a link to your CodePen.</li><li>You can get feedback on your project by sharing it with your friends on Facebook.</li></ol>"
+    },
+    {
+        projId: "fccProject02",
+        projType: "Free Code Camp Full Stack Developer Project",
+        projImg: "images/fccProject02_mdl",
+        projURL: "http://www.doug5solas.com",
+        projCP: "http://codepen.io/dhawkinson/pen/rryyOz",
+        projGH: "https://github.com/dhawkinson/fccProject02",
+        projRole: "Designer, Coder, Tester",
+        projDesc: "<h2>Build a Personal Portfolio Webpage</h2><h3>Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/YqLyXB/.</h3><h3>Project</h3><ol><li>Don't look at the example project's code. Figure it out for yourself.</li><li>Fulfill the below user stories. Use whichever libraries you need. Give it your own personal style.</li><li>You can use Bootstrap, or any other framework of your choice.</li><li>User Story: I can access all of the portfolio webpage's content just by scrolling.</li><li>User Story: I can click different buttons that will take me to the portfolio creator's different social media pages.</li><li>User Story: I can see thumbnail images of different projects the portfolio creator has built (if you haven't built any websites before, use placeholders.)</li><li>User Story: I navigate to different sections of the webpage by clicking buttons in the navigation.</li><li>Don't worry if you don't have anything to showcase on your portfolio yet - you will build several apps on the next few CodePen challenges, and can come back and update your portfolio later.</li><li>There are many great portfolio templates out there already. However, you should consider building your portfolio page as much as you can from the ground up. Using Bootstrap can help make this process much easier for you.</li><li>Note that CodePen.io overrides the Window.open() function, so if you want to open windows using jQuery, you will need to target invisible anchor elements like this one: \'<a target=\'_blank\'>\'.</li><li>Remember to use Read-Search-Ask if you get stuck.</li><li>When you are finished, click the \'I've completed this challenge\' button and include a link to your CodePen.</li><li>You can get feedback on your project by sharing it with your friends on Facebook.</li>"
+    },
+    //  extra element for expansion copying
+    {
+        projId: "",
+        projType: "",
+        projImg: "",
+        projURL: "",
+        projCP: "",
+        projGH: "",
+        projRole: "Designer, Coder, Tester",
+        projDesc: ""
+    }
+
+];

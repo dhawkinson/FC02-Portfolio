@@ -1,0 +1,604 @@
+/* Global Layout Set-up */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 1600px;
+}
+/*************************************************************
+**************************************************************
+
+    Establish Primary Flexbox Infrastructure - Vertical Axis
+
+**************************************************************
+**************************************************************/
+
+.bodyContainer {                        /*  the document body */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+/*  the page segments within the body    */
+.aboutContainer,                        /* about container (page content) */
+.folioContainer,                        /* portfolio container (page content) */
+.contactContainer,                      /* contact container (upper page content) */
+.footContainer {                        /* foot container (page quote and copyright) */
+    flex: none;
+}
+
+/**********************************************
+secondary flex-box structure
+**********************************************/
+/*  the content segments within the page segments    */
+.aboutContainer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+}
+
+.headContainer,
+.imageContainer,
+.tagContainer,
+.contentAboutContainer {
+    flex: none;
+    margin: 0;
+    padding: 0;
+}
+
+.folioContainer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+}
+
+.imageContainer,
+.tagContainer,
+.contentFolioContainer {
+    flex: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contactContainer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+}
+
+.imageContainer,
+.tagContainer,
+.contentContactContainer {
+    flex: none;
+    margin: 0;
+    padding: 0;
+}
+
+/**********************************************
+tertiary flex-box structure
+**********************************************/
+/*  the content details within the content segments    */
+.headContainer {                    /*  held within about.Container */
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-content: space-around;
+   align-items: center;
+}
+.logoItem,
+.nameItem,
+.navItem {
+    flex: none;
+    margin: 0;
+    padding: 0;
+}
+
+.imageContainer {                    /*  held within aboutContainer, folioContainer & contactContainer */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+}
+.imageItem {
+    flex: none;
+    margin: 0;
+    padding: 0;
+}
+.tagContainer {                    /*  held within aboutContainer, folioContainer & contactContainer */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+}
+.tagItem,
+.divider {
+    flex: none;
+    margin: 0;
+    padding: 0;
+}
+.contentAboutContainer {          /*  held within aboutContainer */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-around;
+    align-items: baseline;
+}
+.sideLeft,
+.sideRight {
+    flex: none;
+    margin: 0;
+    padding: 0;
+}
+.contentFolioContainer {          /*  held within folioContainer */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+}
+.leftContainer,
+.rightContainer {
+    flex: none;
+    margin: 0;
+    padding: 0;
+}
+.contentContactContainer {        /*  held within contactContainer */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+}
+.sideLeft,
+.sideRight,
+.bottom {
+    flex: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*******************************************
+    Quarternary flex-box structure
+********************************************/
+/*  the sub details within the content details (folio only)    */
+
+.leftContainer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
+.screenImg {
+    flex:none;
+}
+
+.rightContainer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
+.docImg {
+    flex:none;
+}
+
+
+/*******************************************
+    Set Font Styles
+********************************************/
+
+.aboutContainer,
+.folioContainer,
+.contactContainer,
+.footContainer {
+    font-family:'Lato', sans-serif;
+    font-size: 30%; /* set base font size */
+}
+
+.headContainer {
+    font-family:'Droid Sans', sans-serif !important;
+    font-size: 30%; /* set base font size */
+}
+
+.tagContainer {
+    font-family:'Nobile', sans-serif !important;
+    font-size: 30%; /* set base font size */
+    font-style: italic;
+    color: #F44336;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.25em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+.navItem,
+.card p,
+.card li {
+    font-size: 1em;
+}
+
+.card p,
+.card li {
+    color:  #232e3e;
+}
+
+.footContainer p {
+    font-size: 1em;
+    color: #FFFFFF;
+}
+
+/*******************************************
+    End of Set Font Styles
+********************************************/
+
+/*******************************************
+    the .bodyContainer styling
+********************************************/
+
+.bodyContainer {
+    background: #FFFFFF;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/**********************************************
+    headContainer styling
+**********************************************/
+
+.headContainer {
+    background: #232e3e;
+    width: 100%;
+    position: fixed;
+    z-index: 2000;
+}
+
+.logoItem {
+    text-align: center;
+}
+
+.logoItem img {
+    width: 3em;
+    height: auto;
+}
+
+.nameItem {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px  #F44336;
+    text-align: center;
+}
+
+.nameItem h1 {
+    margin-bottom: .25em;
+}
+
+.bizName {
+    margin-top: -5em;
+}
+
+.navItem {
+    color: #F44336;
+    text-align: center;
+}
+
+.navItem li {
+    display: inline-block;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.navItem li .selected {
+    color: #FF9800;
+}
+
+.navItem a {
+    color: #F44336;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.navItem a:hover {
+    color: #FFFFFF
+}
+
+/**********************************************
+    imageContainer styling
+**********************************************/
+
+.imageContainer {
+    position: relative;
+    top: 115px;
+    left: 0;
+}
+
+/*  Responsive Web Design - Images  (w3Schools.com)
+    If the width property is set to 100%, the image will be responsive and scale up and down:   */
+
+.imageItem img {
+    width: 100%;
+    height: auto;
+}
+
+/*********************************************
+    tag styling
+**********************************************/
+
+.tagContainer {
+    position: relative;
+    width: 100%;
+}
+.tagItem {
+    text-align: center;
+    padding-top: 5%;
+}
+
+/***********************************************
+    about page
+***********************************************/
+
+.aboutContainer {
+    position: relative;
+    width: 100%;
+}
+.card {
+    padding: 2.5em 5em;
+    margin: 0 2.5%;
+    text-align: left;
+    background:#E8EAF6;
+    border-bottom: 4px solid #CCCCCC;
+    border-radius: 1em;
+    transition: all .5s;
+}
+.card:hover {
+    border-color: #232e3e;
+}
+
+.card.sideLeft {
+    width: 60%;
+}
+
+.card.sideRight {
+    width: 25%;
+}
+
+.cameo {
+    float: left;
+    padding-right: 1em;
+}
+.headShotItem {
+    padding: 12.5%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transition: all .5s;
+}
+.headShotItem:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+ul.skills {
+    padding: 0;
+    text-align: center;
+}
+.skills li {
+    border-radius: 6px;
+    display: inline-block;
+    background: #FF6E40;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    margin: 2px;
+}
+.skills li:nth-child(odd) {
+    background: #232e3e;
+}
+
+.aboutQuote,
+.folioQuote,
+.contactQuote {
+    text-align: center;
+    color: #F44336
+}
+
+.divider img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+/**********************************************
+   folio page styling
+***********************************************/
+
+.card a:link,
+.card a:focus,
+.card a:visited {
+    text-decoration: none;     /*  remove underline */
+    color: #000000;
+}
+
+/*********************************************
+    temp code while linkage to detail display is built
+**********************************************/
+@keyframes UC {                 /* The animation code for features under construction   */
+    0%   {color: red; left:0px; top:0px;}
+    100%  {color: blue; left:50px; top:0px;}
+}
+
+
+.UC {                           /* The animation code for features under construction (cont'd)  */
+    position: relative;
+    animation-name: UC;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
+/*********************************************
+    end of temp code
+**********************************************/
+
+/*********************************************
+    slide-in captions (screen shots & docs)
+**********************************************/
+figure {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+    margin: .5%;
+}
+
+figcaption {
+    position: absolute;
+    background: rgba(0,0,0,0.75);
+    color: #FFFFFF;
+    padding: 5px 20px;
+    opacity: 0;
+    bottom: 0;
+    left: -30%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:    all 0.5s ease;
+    -o-transition:      all 0.5s ease;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+    left: 0;
+}
+
+.docShots {
+    background-size: 85px 111px;
+    background: no-repeat;
+    padding-bottom: 3em;
+    opacity: .5;
+    transition: all .5s;
+}
+
+/**********************************************
+    contact page
+***********************************************/
+
+#contact .sideLeft {
+    width:100%;
+}
+
+#contact .sideRight {
+    width:100%;
+}
+#contact .bottom {
+    width:100%;
+}
+
+ul.contactInfo {           /*  the ul tag  */
+    list-style-type: none;
+    padding: 0;
+    margin-left: 3em;
+    opacity: .5;
+    transition: all .5s;
+}
+
+.contactInfo li {
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: 0 .5em;
+    padding-left: 3em;
+    line-height: 3em;
+}
+
+.contactInfo li.phone {
+    background-image: url("../images/iphone.svg");
+}
+
+.contactInfo li.email {
+    background-image: url("../images/email.svg");
+}
+
+.contactInfo li.linkedin {
+    background-image: url("../images/linkedin.svg");
+}
+
+.contactInfo li.twitter {
+    background-image: url("../images/twitter.svg");
+}
+
+.contactInfo li.github {
+    background-image: url("../images/github.svg");
+}
+
+.contactInfo li.codepen {
+    background-image: url("../images/codepen.svg");
+}
+
+.bullet a:link,
+.bullet a:focus,
+.bullet a:visited {
+    text-decoration: none;     /*  remove underline */
+    color: #000000;
+}
+
+.bullet li:hover {
+    opacity: 1;
+}
+
+p.attribution {
+    text-decoration: none;     /*  remove underline */
+    color: #000000;
+    font-size: 75%;
+}
+
+/**********************************************
+***********************************************
+
+    footer
+
+***********************************************
+***********************************************/
+
+/**********************************************
+    secondary flex-box structure
+***********************************************/
+.footContainer {
+    display: inline-flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyrightItem {
+    flex: none;
+}
+
+/**********************************************
+    styling
+***********************************************/
+
+.footContainer {
+    position: relative;
+    width: 100%;
+    background: #3E2723;
+}
+
+.copyrightItem {
+    font-size: .75%;
+    text-align: center;
+    top: -8px;
+}

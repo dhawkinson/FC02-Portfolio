@@ -1,0 +1,288 @@
+
+/*******************************************
+    Responsive CSS
+********************************************/
+
+@media (min-width: 768px) {
+    /************************************
+        smaller tablets
+    *************************************
+    *************************************
+        adjust fonts styles
+    *************************************/
+
+    .headContainer,
+    .imageContainer,
+    .tagContainer,
+    .aboutContainer,
+    .folioContainer,
+    .contactContainer,
+    .footContainer {
+        font-size: 45%;
+    }
+
+}
+
+@media (min-width: 992px) {
+    /************************************
+        larger tablets & smaller laptops
+    *************************************
+    /************************************
+        adjust fonts styles
+    *************************************/
+
+    .headContainer,
+    .imageContainer,
+    .tagContainer,
+    .aboutContainer,
+    .folioContainer,
+    .contactContainer,
+    .footContainer {
+        font-size: 60%;
+    }
+
+    /**********************************************
+    tertiary flex-box structure
+    **********************************************/
+    /*  the content details within the content segments    */
+    .headContainer {                    /*  held within about.Container */
+        display: inline-flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: space-around;
+        align-items: center;
+    }
+    .logoItem,
+    .nameItem,
+    .navItem {
+        flex: none;
+    }
+
+    .contentAboutContainer {          /*  held within aboutContainer */
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: space-around;
+        align-items: baseline;
+    }
+    .sideLeft,
+    .sideRight {
+        flex: none;
+        margin: 0;
+        padding: 0;
+    }
+    .contentFolioContainer {          /*  held within folioContainer */
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: space-around;
+        align-items: center;
+    }
+    .leftContainer,
+    .rightContainer {
+        flex: none;
+        margin: 0;
+        padding: 0;
+    }
+    .contentContactContainer {        /*  held within contactContainer */
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: space-around;
+        align-items: center;
+    }
+    .sideLeft,
+    .sideRight,
+    .bottom {
+        flex: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*******************************************
+        Quarternary flex-box structure
+    ********************************************/
+    /*  the sub details within the content details (folio only)    */
+
+    .leftContainer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+    }
+
+    .screenImg {
+        flex:none;
+    }
+
+    .rightContainer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+    }
+
+    .docImg {
+        flex:none;
+    }
+
+    /************************************
+        adjust spacing for row display
+    *************************************/
+    .logoItem {
+        text-align: left;
+        width: 20%;
+    }
+    .logoItem img {
+        width: 10em;
+        height: auto;
+    }
+
+    .nameItem {
+        text-shadow: 2px 2px 2px #F44336;
+        text-align: left;
+        width: 45%;
+    }
+
+    .bizName {
+        padding-left: 20%;
+    }
+
+    .navItem {
+        text-align: right;
+        width: 20%;
+    }
+
+    .aboutContainer {
+        position: relative;
+        display: inline-flex;
+        flex-flow: row wrap;
+    }
+
+    .card {
+        flex: none;
+    }
+
+    /*********************************************
+    folio page - tertiary flex-box structures
+    **********************************************/
+    .thumbNailContainer {
+        display: inline-flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+    }
+
+    .screenImg {
+        flex:none;
+    }
+
+    .docShotContainer {
+        display: inline-flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+    }
+
+    .docImg {
+        flex:none;
+    }
+
+    /*********************************************
+        slide-in captions (screen shots & docs)
+    **********************************************/
+    figure {
+        display: inline;
+        position: relative;
+        overflow: hidden;
+        padding: 1%;
+        margin: 0;
+    }
+
+    figcaption {
+        position: absolute;
+        background: rgba(0,0,0,0.75);
+        color: #FFFFFF;
+        padding: 3px 10px;
+        opacity: 0;
+        bottom: 5px;
+        left: -30%;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition:    all 0.5s ease;
+        -o-transition:      all 0.5s ease;
+    }
+
+    figure:hover figcaption {
+        opacity: 1;
+        left: 0;
+    }
+
+    /*********************************************
+    contact page - tertiary flex-box structures
+    **********************************************/
+    .contactUpperContainer {
+        display: inline-flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-content: space-around;
+        align-items: baseline;
+    }
+
+    .card {
+        flex:none;
+    }
+
+    .contactLowerContainer {
+        display: inline-flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: space-around;
+        align-items: center;
+    }
+
+    .card {
+        flex:none;
+    }
+
+    #contact .sideLeft {
+        width:70%;
+    }
+    #contact .sideRight {
+        width:20%;
+    }
+    #contact .contactLowerContainer {
+        width:80%;
+    }
+
+    .footContainer {
+        position: relative;
+    }
+}
+@media (min-width: 1200px) {
+    /************************************
+        larger laptops & desktops
+    *************************************
+    /************************************
+        adjust fonts
+    *************************************/
+
+    .headContainer,
+    .imageContainer,
+    .tagContainer,
+    .aboutContainer,
+    .folioContainer,
+    .contactContainer,
+    .footContainer {
+        font-size: 75%;
+    }
+    .imageContainer {
+        position: relative;
+        top: 55px;
+        left: 0;
+    }
+
+}
