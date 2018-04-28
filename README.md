@@ -1,7 +1,7 @@
-# fccProject02
+# FC02-Portfolio
 Free Code Camp Project 02 - Personal Portfolio
 
-This project is similar to fivesolasdesign with the foloowing exception.
+This project is similar to fivesolasdesign with the following exception.
 
 The Website consists of a single page the contains three segments:
 
